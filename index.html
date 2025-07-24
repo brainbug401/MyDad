@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Dad!</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      animation: fadeIn 2s ease-in-out;
+    }
+    p {
+      font-size: 1.2rem;
+      max-width: 500px;
+      margin: 0 auto 20px;
+      line-height: 1.5;
+    }
+    .photo {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      margin: 20px 0;
+      object-fit: cover;
+      animation: bounce 2s infinite;
+    }
+    .btn {
+      background: #fff;
+      color: #ff4081;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #ffebee;
+      transform: scale(1.05);
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    @keyframes bounce {
+      0%, 100% {transform: translateY(0);}
+      50% {transform: translateY(-10px);}
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+        padding: 0 10px;
+      }
+      .photo {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 Tug‘ilgan kuningiz bilan, Dada! 🎉</h1>
+  <img src="./photo_2025-07-24_19-24-46.jpg" alt="Dad Photo" class="photo">
+  <p>Bugun biz uchun eng muhim insonning tug‘ilgan kuni! Sizga sog‘lik, baxt va cheksiz quvonch tilaymiz. Biz sizni juda yaxshi ko‘ramiz! ❤️</p>
+  <button class="btn" onclick="alert('Siz dunyodagi eng zo‘r dadasiz! ❤️')">🎁 Maxsus tabrik</button>
+</body>
+</html>
